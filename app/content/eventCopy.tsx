@@ -11,21 +11,25 @@ export const eventCopy = {
     heroPlace: "Ray Bar · Novi Sad",
     heroPlaceIntro:
       "Come learn more about cats with special health needs and the people who care for them.",
-    cta: "Save the date",
+    cta: "Meet the cats",
 
     aboutTitle: (
       <>
-        SEVEN CATS. <em>SEVEN INTRODUCTIONS.</em>
+        <em>WHY WE’RE GATHERING:</em>
       </>
     ),
     aboutText: [
-      "Cats & Friends is a warm, open gathering about seven cats and the people who care for them.",
-      "Meet the cats through photos, videos and their guardians’ stories, then find a way to take part that feels right for you.",
+      "Cats with health conditions are often overlooked: it is harder for them to find a home, and their diagnoses are surrounded by myths and fears. We, the volunteers, want to change this injustice because we know that these cats, like all others, simply want to be loved — and they need our help.",
+      "There are many ways to help. Come hear their stories, see photos and videos, learn something new, buy a dessert or enjoy a tasty drink.",
+      <>
+        We want every guest to leave the gathering with a warm feeling:{" "}
+        <strong>“Today, I became part of something good.”</strong> We can’t wait to see you!
+      </>,
     ],
 
     meet: "MEET THE CATS",
     meetCopy:
-      "Every cat has their own story. We’ll introduce you to the cats and their guardians — the people who care for them every day. Scan the QR code to learn more about each cat.",
+      "The guardians will show presentations and answer questions. The cats themselves will stay at home, in their familiar and calm surroundings.",
     more: (
       <>
         + Lila
@@ -34,27 +38,25 @@ export const eventCopy = {
         <br />+ more friends
       </>
     ),
-    plan: (
-      <>
-        THE
-        <br />
-        PLAN.
-      </>
-    ),
+    plan: "EVENING PROGRAM",
     program: [
       [
         "15:00",
-        "Meet the cats & guardians",
-        "Stories, personalities and the people who care for them.",
+        "The cats’ stories",
+        "Their guardians will share the cats’ personalities, stories and current needs.",
       ],
       [
         "16:00",
         "Veterinary talk: FIV and FeLV in cats",
         "After the talk, guests will be able to ask questions.",
       ],
-      ["17:00", "Stay & connect", "Ask questions, meet volunteers and find your own way to help."],
+      [
+        "17:00",
+        "Open conversation",
+        "Meet the guardians and volunteers, and talk about helping, adoption or foster care.",
+      ],
     ],
-    allDayLabel: "All afternoon:",
+    allDayLabel: "Throughout the evening:",
     allDay: [
       ["🌿", "Charity market with plants, books, baked goods and gifts"],
       ["🥤", "Drinks and snacks"],
@@ -65,17 +67,7 @@ export const eventCopy = {
       "Sergey Alexandrovich Igolchenko is a veterinarian, founder of the Sam Sebe Veterinar community and organizer of an educational space for pet owners. He will explain feline immunodeficiency and leukemia in clear, accessible language.",
     veterinarianTelegram: "Telegram — Sam Sebe Veterinar",
     veterinarianInstagram: "Sergey’s Instagram",
-    final: (
-      <>
-        BRING A<br />
-        FRIEND.
-        <br />
-        <em>
-          MAKE A<br />
-          DIFFERENCE.
-        </em>
-      </>
-    ),
+    final: "SEE YOU THERE",
     date: (
       <>
         23 AUGUST
@@ -202,21 +194,25 @@ export const eventCopy = {
     heroPlace: "Ray Bar · Novi Sad",
     heroPlaceIntro:
       "Dođite da saznate više o macama sa posebnim zdravstvenim potrebama i ljudima koji brinu o njima.",
-    cta: "Sačuvaj datum",
+    cta: "Upoznajte mace",
 
     aboutTitle: (
       <>
-        SEDAM MACA. <em>SEDAM UPOZNAVANJA.</em>
+        <em>ZAŠTO SE OKUPLJAMO:</em>
       </>
     ),
     aboutText: [
-      "Cats & Friends je toplo, otvoreno druženje posvećeno sedam maca i ljudima koji brinu o njima.",
-      "Upoznajte mace kroz fotografije, video-snimke i priče staratelja, a zatim pronađite način da se uključite koji vam odgovara.",
+      "Mace sa zdravstvenim problemima često ostaju neprimećene: teže pronalaze dom, a njihove dijagnoze prate brojni mitovi i strahovi. Mi, volonteri, želimo da ispravimo ovu nepravdu jer znamo da ove mace, kao i sve druge, samo žele ljubav — i potrebna im je naša pomoć.",
+      "Pomoći možete na mnogo načina. Dođite da čujete njihove priče, pogledate fotografije i video-snimke, saznate nešto novo, kupite desert ili popijete nešto ukusno.",
+      <>
+        Važno nam je da svaki gost sa druženja ode sa toplim osećajem:{" "}
+        <strong>„Danas sam deo nečeg lepog.“</strong> Čekamo vas!
+      </>,
     ],
 
     meet: "GLAVNI JUNACI VEČERI",
     meetCopy:
-      "Svaka maca ima svoju priču, karakter i potrebe. Upoznaćemo vas sa macama i njihovim starateljima — ljudima koji svakodnevno brinu o njima. Skenirajte QR kod da saznate više o svakoj maci.",
+      "Staratelji će prikazati prezentacije i odgovoriti na pitanja. Same mace će ostati kod kuće, u poznatom i mirnom okruženju.",
     more: (
       <>
         + Lila
@@ -225,18 +221,12 @@ export const eventCopy = {
         <br />+ drugi prijatelji
       </>
     ),
-    plan: (
-      <>
-        PLAN
-        <br />
-        VEČERI.
-      </>
-    ),
+    plan: "PROGRAM VEČERI",
     program: [
       [
         "15:00",
-        "Upoznavanje sa macama i starateljima",
-        "Priče, karakteri i ljudi koji svakodnevno brinu o njima.",
+        "Priče o macama",
+        "Staratelji će govoriti o karakterima maca, njihovim pričama i trenutnim potrebama.",
       ],
       [
         "16:00",
@@ -245,11 +235,11 @@ export const eventCopy = {
       ],
       [
         "17:00",
-        "Ostanite i družite se",
-        "Postavite pitanja, upoznajte volontere i pronađite svoj način da pomognete.",
+        "Slobodno druženje",
+        "Upoznajte staratelje i volontere i razgovarajte o pomoći, usvajanju ili privremenom smeštaju.",
       ],
     ],
-    allDayLabel: "Tokom celog popodneva:",
+    allDayLabel: "Tokom cele večeri:",
     allDay: [
       ["🌿", "Dobrotvorni bazar sa biljkama, knjigama, pecivom i poklonima"],
       ["🥤", "Piće i grickalice"],
@@ -260,19 +250,7 @@ export const eventCopy = {
       "Sergej Aleksandrovič Igolčenko je veterinar, osnivač zajednice „Sam sebi veterinar“ i organizator edukativnog prostora za vlasnike kućnih ljubimaca. Govoriće o imunodeficijenciji i leukemiji kod mačaka jednostavnim i razumljivim jezikom.",
     veterinarianTelegram: "Telegram — Sam sebi veterinar",
     veterinarianInstagram: "Sergejev Instagram",
-    final: (
-      <>
-        POVEDI
-        <br />
-        PRIJATELJA.
-        <br />
-        <em>
-          POKRENI
-          <br />
-          PROMENU.
-        </em>
-      </>
-    ),
+    final: "VIDIMO SE",
     date: (
       <>
         23. AVGUST
