@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Figtree:ital,wght@0,500;0,700;0,800;0,900;1,700;1,800&family=Roboto+Condensed:wght@500;700;900&family=Roboto+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+:root {
+  --ink: #102b58;
+  --pink: #e86b87;
+  --yellow: #ffd360;
+  --red: #e94322;
+  --cream: #fbf3e6;
+  --blue: #6ca8ca;
+  --butter: #f2dfae;
+  --blush: #d9a8ae;
+  --mist-blue: #9bb8c6;
+  --terracotta: #a84435;
+  --display-font: Figtree, Arial, sans-serif;
+  --mono-font: "DM Mono", monospace;
+
+  --section-title-font-size: clamp(46px, 6.4vw, 92px);
+  --section-title-line-height: 0.83;
+  --section-title-font: 900 var(--section-title-font-size) / var(--section-title-line-height)
+    var(--display-font);
+  --card-title-font-size: clamp(26px, 2.8vw, 40px);
+  --card-date-font-size: clamp(44px, 5.2vw, 74px);
+
+  --large-text-font-size: 21px;
+  --large-text-line-height: 1.2;
+  --large-text-font: 700 var(--large-text-font-size) / var(--large-text-line-height)
+    var(--display-font);
+
+  --text-font-size: 18px;
+  --text-line-height: 1.3;
+  --text-font: 700 var(--text-font-size) / var(--text-line-height) var(--display-font);
+  --small-text-font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: var(--display-font);
+}
+
+main[data-language="ru"] {
+  --display-font: "Roboto Condensed", Arial, sans-serif;
+  --mono-font: "Roboto Mono", monospace;
+  --section-title-font:
+    900 var(--section-title-font-size) / var(--section-title-line-height) "Roboto Condensed", Arial,
+    sans-serif;
+  --large-text-font:
+    500 var(--large-text-font-size) / var(--large-text-line-height) "Roboto Condensed", Arial,
+    sans-serif;
+  --text-font:
+    500 var(--text-font-size) / var(--text-line-height) "Roboto Condensed", Arial, sans-serif;
+  font-family: var(--display-font);
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  font: 500 var(--small-text-font-size) / 1.3 var(--mono-font);
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  padding: 14px 18px;
+  border: 2px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--small-text-font-size);
+  font-weight: 900;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+
+.button:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
+.button span {
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.button-dark {
+  background: var(--ink);
+  color: var(--yellow);
+}
+
+.button-light {
+  margin-top: 15px;
+  background: var(--cream);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --small-text-font-size: 13px;
+  }
+}

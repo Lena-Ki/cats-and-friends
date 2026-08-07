@@ -1,0 +1,88 @@
+.come {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
+  gap: 8vw;
+  padding: clamp(70px, 10vw, 140px) clamp(22px, 10vw, 14%);
+  color: var(--cream);
+  background: var(--terracotta);
+}
+
+.come h2 {
+  margin: 0;
+  font: var(--section-title-font);
+}
+
+.come h2 em {
+  color: var(--yellow);
+  font-style: normal;
+  text-shadow: 6px 5px 0 var(--ink);
+}
+
+.card {
+  padding: 28px;
+  border: 3px solid var(--ink);
+  color: var(--ink);
+  background: var(--yellow);
+  box-shadow: 12px 12px 0 var(--ink);
+  transform: rotate(-2deg);
+}
+
+.eventName {
+  font: 900 var(--text-font-size) / 1 var(--display-font);
+}
+
+.largeDate {
+  font-size: var(--card-date-font-size);
+  font-weight: 900;
+  line-height: 0.78;
+}
+
+.details {
+  font: 500 var(--text-font-size) / 1.35 var(--mono-font);
+}
+
+.registrationNote {
+  max-width: 360px;
+  margin: 18px 0 0;
+  font-size: var(--small-text-font-size);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.map {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 28px;
+  border: 3px solid var(--ink);
+  background: var(--cream);
+  box-shadow: 12px 12px 0 var(--ink);
+  overflow: hidden;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: clamp(320px, 38vw, 500px);
+  border: 0;
+}
+
+@media (max-width: 720px) {
+  .come {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .card {
+    max-width: 410px;
+  }
+
+  .map {
+    margin-top: 10px;
+    box-shadow: 7px 7px 0 var(--ink);
+  }
+
+  .map iframe {
+    height: 340px;
+  }
+}
