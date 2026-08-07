@@ -4,7 +4,8 @@ import { pathToFileURL } from "node:url";
 const outputDirectory = new URL("../docs/", import.meta.url);
 const clientDirectory = new URL("../dist/client/", import.meta.url);
 const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-const basePath = process.env.PAGES_BASE_PATH ?? "/cats-and-friends/";
+const basePath = process.env.PAGES_BASE_PATH ?? "/";
+const customDomain = process.env.PAGES_CUSTOM_DOMAIN ?? "catsandfriends.org";
 
 await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
@@ -37,6 +38,7 @@ await Promise.all([
   render("/ru", new URL("ru/", outputDirectory), "ru"),
   render("/sr", new URL("sr/", outputDirectory), "sr"),
   writeFile(new URL(".nojekyll", outputDirectory), ""),
+  writeFile(new URL("CNAME", outputDirectory), `${customDomain}\n`),
 ]);
 
 console.log(`GitHub Pages files are ready in ${outputDirectory.pathname}`);
